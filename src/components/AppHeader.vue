@@ -1,7 +1,7 @@
 <script>
 export default {
   data() {
-    return{
+    return { 
       message: 'Template Vite + Vue'
     }
   }
@@ -9,27 +9,23 @@ export default {
 </script>
 
 <template>
-
   <header>
-    
     <h1>
-
       {{ message }}
-
     </h1>
-    
   </header>
-
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+@use '../assets/scss/partials/variables' as *;
+
 header {
-  background-color: aquamarine;
+  background-color: $mainBgColor;
   text-align: center;
   padding: 20px 0;
 }
 
 h1 {
-  color: lightcoral;
+  color: $mainColor;
 }
 </style>
